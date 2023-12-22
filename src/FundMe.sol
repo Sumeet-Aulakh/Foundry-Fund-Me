@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.18;
 
-import {AggregatorV3Interface} from "@chainlink/contracts/src/v0.8/interfaces/AggregatorInterface.sol";
+import {AggregatorV3Interface} from "@chainlink/contracts/src/v0.8/interfaces/AggregatorV3Interface.sol";
 import { PriceConverter } from "./PriceConverter.sol";
 
 error Not__Owner();
@@ -34,7 +34,7 @@ contract FundMe {
     
     modifier onlyOwner {
         // require(msg.sender == owner);
-        if (msg.sender != i_owner) revert NotOwner();
+        if (msg.sender != i_owner) revert Not__Owner();
         _;
     }
     
