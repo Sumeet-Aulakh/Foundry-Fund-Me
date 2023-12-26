@@ -12,8 +12,8 @@
 ## Quickstart
 
 ```
-git clone https://github.com/Cyfrin/foundry-fund-me-f23
-cd foundry-fund-me-f23
+git clone https://github.com/Sumeet-Aulakh/Foundry-Fund-Me
+cd Foundry-Fund-Me
 forge build
 ```
 
@@ -47,7 +47,7 @@ or
 
 "forge test -m testFunctionName" is deprecated. Please use
 
-forge test --match-test testFunctionName
+forge test --mt testFunctionName
 ```
 
 or
